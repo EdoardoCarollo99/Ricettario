@@ -533,7 +533,7 @@
 
       function updateIngredients() {
         const currentDiameter = parseInt(diametroInput.value) || baseDiameter;
-        
+
         // Calculate multiplier based on area (π * r²)
         // Area ratio = (new_diameter / base_diameter)²
         const multiplier = Math.pow(currentDiameter / baseDiameter, 2);
@@ -581,7 +581,7 @@
         // Update portions info
         const estimatedPortions = calculatePortions(currentDiameter);
         portionsInfo.textContent = `👥 Porzioni: ${estimatedPortions} persone`;
-        
+
         // Update tortiera info
         if (currentDiameter === baseDiameter) {
           tortieraInfo.textContent = `📏 Tortiera standard: ${currentDiameter} cm`;
