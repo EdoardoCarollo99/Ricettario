@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Spezzatino di Salsiccia, Bietole e Patate - Ricetta completa"
+    />
+    <title>Spezzatino di Salsiccia, Bietole e Patate | Il Mio Ricettario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/recipe-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>🍳 Ricettario</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#ricette" class="nav-link">Ricette</a></li>
+          <li><a href="index.html#categorie" class="nav-link">Categorie</a></li>
+          <li><a href="index.html#about" class="nav-link">Chi Sono</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+      <div class="recipe-hero-overlay"></div>
+      <div class="recipe-hero-content">
+        <span class="recipe-badge">Secondi</span>
+        <h1 class="recipe-hero-title">
+          Spezzatino di Salsiccia, Bietole e Patate
+        </h1>
+        <p class="recipe-hero-subtitle">
+          Con Pecorino Romano DOP e peperoncino
+        </p>
+        <div class="recipe-hero-meta">
+          <span>⏱️ Totale: 25 min</span>
+          <span>👨‍🍳 Difficoltà: Facile</span>
+          <span>🔥 549 kcal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <div class="recipe-container">
+      <div class="recipe-main">
+        <!-- Image -->
+        <div class="recipe-image-main">
+          <img
+            src="images/spezzatino-salsiccia.jpg"
+            alt="Spezzatino di Salsiccia, Bietole e Patate"
+          />
+        </div>
+
+        <!-- Description -->
+        <div class="recipe-description-box">
+          <p>
+            Che buon sapore ha il Pecorino Romano DOP! Una vera eccellenza
+            d'Italia, preparato con cura solo in determinate zone, come Lazio,
+            Sardegna e la provincia di Grosseto, in Toscana.
+          </p>
+          <p>
+            Un formaggio a pasta dura prodotto con latte fresco di pecora,
+            aromatico, lievemente piccante e sapido. Quello grattugiato ha un
+            gusto ancora più intenso, per via della sua lunga stagionatura, per
+            questo va dosato con cura, salando poco il resto degli ingredienti.
+          </p>
+          <p>
+            Ottimo sulla pasta, nei ripieni, sulle bruschette o come ghiotta
+            crema calda. Speciale anche mescolato in questo spezzatino umido e
+            corroborante, a base di salsiccia, patate e bietole.
+          </p>
+        </div>
+
+        <!-- Timing Info -->
+        <div class="timing-card">
+          <h3>⏰ Tempistiche</h3>
+          <div class="timing-grid">
+            <div class="timing-item">
+              <span class="timing-label">Preparazione</span>
+              <span class="timing-value">10 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Cottura</span>
+              <span class="timing-value">15 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Tempo Totale</span>
+              <span class="timing-value">25 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredients-section">
+          <h2>📝 Ingredienti</h2>
+
+          <!-- Ingredient Calculator -->
+          <div class="ingredient-calculator">
+            <div class="calculator-header">
+              <span class="calculator-icon">🧮</span>
+              <h3>Calcolatore Porzioni</h3>
+            </div>
+            <div class="calculator-controls">
+              <label for="porzioniCount">Numero di persone:</label>
+              <div class="counter-controls">
+                <button id="decreaseBtn" class="counter-btn">-</button>
+                <input
+                  type="number"
+                  id="porzioniCount"
+                  value="2"
+                  min="1"
+                  max="12"
+                />
+                <button id="increaseBtn" class="counter-btn">+</button>
+              </div>
+              <div class="calculator-info">
+                <span id="portionsInfo">👥 Per: 2 persone</span>
+                <span id="calorieInfo">🔥 Totale: 1098 kcal</span>
+              </div>
+            </div>
+          </div>
+
+          <h3
+            style="
+              margin-top: 2rem;
+              margin-bottom: 1rem;
+              color: var(--dark-color);
+            "
+          >
+            Inclusi nella preparazione:
+          </h3>
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span class="ingredient-name">Salsiccia di maiale</span>
+              <span class="ingredient-amount" data-base="250">250g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Patate</span>
+              <span class="ingredient-amount" data-base="300"
+                >300g (2 medie)</span
+              >
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Bietola</span>
+              <span class="ingredient-amount" data-base="200">200g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name"
+                >Pecorino Romano DOP grattugiato</span
+              >
+              <span class="ingredient-amount" data-base="40">40g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Aglio</span>
+              <span class="ingredient-amount" data-base="1">1 spicchio</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Peperoncino tritato</span>
+              <span class="ingredient-amount" data-base="1">q.b.</span>
+            </div>
+          </div>
+
+          <h3
+            style="
+              margin-top: 2rem;
+              margin-bottom: 1rem;
+              color: var(--dark-color);
+            "
+          >
+            Da avere in dispensa:
+          </h3>
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span class="ingredient-name">Olio d'oliva</span>
+              <span class="ingredient-amount">q.b.</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Sale</span>
+              <span class="ingredient-amount">q.b.</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Pepe nero</span>
+              <span class="ingredient-amount">q.b.</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Acqua</span>
+              <span class="ingredient-amount" data-base="350">350ml</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions-section">
+          <h2>👨‍🍳 Procedimento</h2>
+
+          <!-- Step 1 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <h3>Preparare gli Ingredienti</h3>
+              <span class="step-time">5 min</span>
+            </div>
+            <p>
+              Eliminate la pelle della salsiccia e tagliatela in tocchetti di
+              circa 2 cm.
+            </p>
+            <p>
+              Scaldate un'ampia padella antiaderente a fuoco medio con un filo
+              d'olio. Unite l'aglio (potete tenere la buccia) e un pizzico di
+              peperoncino e rosolate per 1-2 minuti.
+            </p>
+            <p>Unite la salsiccia e proseguite la cottura per 3-4 minuti.</p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Omettete il peperoncino se non
+              gradite il piccante, la ricetta sarà comunque deliziosa!
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <h3>Cuocere la Salsiccia</h3>
+              <span class="step-time">5 min</span>
+            </div>
+            <p>
+              Sbucciate le patate, tagliatele a cubetti piccoli di circa 1-2 cm
+              e unitele nella padella.
+            </p>
+            <p>
+              Condite con un pizzico di pepe, incorporate 350 ml d'acqua (circa
+              un bicchiere e mezzo) per 2 persone e cuocete per 5 minuti.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> La salsiccia sarà cotta quando
+              risulterà opaca e chiara al centro.
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <h3>Unire le Bietole</h3>
+              <span class="step-time">10 min</span>
+            </div>
+            <p>
+              Rimuovete la parte più coriacea dal gambo delle bietole e
+              riducetele a striscioline.
+            </p>
+            <p>
+              Unitele in padella, coprite con il coperchio e proseguite la
+              cottura per altri 10 minuti: dovrete ottenere una consistenza
+              brodosa, aggiungete un altro mezzo bicchiere d'acqua se
+              necessario.
+            </p>
+            <p>
+              Alla fine, spegnete il fuoco, condite con una manciata di pecorino
+              e mescolate.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="instruction-step final-step">
+            <div class="step-header">
+              <span class="step-number">4</span>
+              <h3>Impiattare</h3>
+              <span class="step-time">2 min</span>
+            </div>
+            <p>
+              Disponete lo spezzatino di salsiccia, bietole e patate nei piatti.
+            </p>
+            <p>
+              Spolverizzate con il pecorino rimasto e condite a piacere con una
+              macinata di pepe.
+            </p>
+            <p><strong>Buon appetito!</strong> 🍽️</p>
+          </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips-section">
+          <h2>💡 Consigli Utili</h2>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">🌶️</div>
+              <h4>Regola Piccantezza</h4>
+              <p>
+                Puoi dosare il peperoncino secondo i tuoi gusti o ometterlo
+                completamente.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🧀</div>
+              <h4>Pecorino Romano</h4>
+              <p>
+                Il pecorino è molto saporito: regola il sale di conseguenza per
+                non rendere il piatto troppo sapido.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">💧</div>
+              <h4>Consistenza</h4>
+              <p>
+                Aggiusta la quantità d'acqua per ottenere la consistenza brodosa
+                desiderata.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🥔</div>
+              <h4>Cubetti Uniformi</h4>
+              <p>
+                Taglia le patate in pezzi piccoli e uniformi per una cottura
+                omogenea.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags Section -->
+        <div class="tags-section">
+          <h2>🏷️ Caratteristiche</h2>
+          <div class="tags-list">
+            <span class="tag">💪 Ricco di proteine</span>
+            <span class="tag">⚡ Veloce</span>
+            <span class="tag">🌶️ Piccante</span>
+            <span class="tag">🔥 Poche calorie</span>
+            <span class="tag">🍽️ Meno di 50g Carbs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="recipe-sidebar">
+        <!-- Quick Info -->
+        <div class="sidebar-card">
+          <h3>📊 Info Rapide</h3>
+          <div class="quick-info">
+            <div class="info-item">
+              <span class="info-label">Tempo Totale</span>
+              <span class="info-value">25 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Preparazione</span>
+              <span class="info-value">10 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Cottura</span>
+              <span class="info-value">15 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Difficoltà</span>
+              <span class="info-value">Facile</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Calorie/porzione</span>
+              <span class="info-value">549 kcal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nutrition Info -->
+        <div class="sidebar-card">
+          <h3>🥗 Valori Nutrizionali</h3>
+          <div class="nutrition-info">
+            <div class="nutrition-item">
+              <span>Calorie</span>
+              <strong>549 kcal</strong>
+            </div>
+            <div class="nutrition-item">
+              <span>Proteine</span>
+              <strong>36.6g</strong>
+            </div>
+            <div class="nutrition-item">
+              <span>Carboidrati</span>
+              <strong>&lt; 50g</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="sidebar-card">
+          <h3>🔧 Attrezzatura</h3>
+          <ul class="equipment-list">
+            <li>Padella antiaderente grande</li>
+            <li>Coperchio</li>
+            <li>Coltello</li>
+            <li>Tagliere</li>
+            <li>Pelapatate</li>
+          </ul>
+        </div>
+
+        <!-- Allergens -->
+        <div class="sidebar-card allergens-card">
+          <h3>⚠️ Allergeni</h3>
+          <div class="allergens-list">
+            <span class="allergen">Latte</span>
+          </div>
+          <p
+            class="allergen-note"
+            style="
+              font-size: 0.8rem;
+              margin-top: 1rem;
+              background: rgba(255, 193, 7, 0.1);
+              color: #856404;
+              border-color: rgba(255, 193, 7, 0.3);
+            "
+          >
+            ⚠️ Prodotto in stabilimento che utilizza anche uova, pesce,
+            arachidi, sesamo, crostacei, soia, frutta a guscio e grano
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Back to recipes -->
+    <div class="back-to-recipes">
+      <a href="index.html#ricette" class="btn btn-primary"
+        >← Torna alle Ricette</a
+      >
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍳 Il Mio Ricettario</h3>
+            <p>La tua collezione personale di ricette deliziose</p>
+          </div>
+          <div class="footer-section">
+            <h4>Link Rapidi</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ricette">Ricette</a></li>
+              <li><a href="index.html#categorie">Categorie</a></li>
+              <li><a href="index.html#about">Chi Sono</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Il Mio Ricettario. Creato con ❤️ e passione per la
+            cucina.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // ==================== INGREDIENT CALCULATOR ====================
+      const porzioniInput = document.getElementById("porzioniCount");
+      const decreaseBtn = document.getElementById("decreaseBtn");
+      const increaseBtn = document.getElementById("increaseBtn");
+      const portionsInfo = document.getElementById("portionsInfo");
+      const calorieInfo = document.getElementById("calorieInfo");
+      const ingredientAmounts = document.querySelectorAll(
+        ".ingredient-amount[data-base]"
+      );
+
+      // Base values for 2 persons
+      const basePortions = 2;
+      const caloriesPerPortion = 549;
+
+      function updateIngredients() {
+        const currentPortions = parseInt(porzioniInput.value) || basePortions;
+        const multiplier = currentPortions / basePortions;
+
+        // Update each ingredient
+        ingredientAmounts.forEach((element) => {
+          const baseValue = parseFloat(element.getAttribute("data-base"));
+          const newValue = baseValue * multiplier;
+
+          // Format the value based on ingredient type
+          let formattedValue;
+          if (element.textContent.includes("ml")) {
+            formattedValue = `${Math.round(newValue)}ml`;
+          } else if (element.textContent.includes("medie")) {
+            const patateNum = Math.round(newValue / 150);
+            formattedValue = `${Math.round(newValue)}g (${patateNum} ${
+              patateNum === 1 ? "media" : "medie"
+            })`;
+          } else if (element.textContent.includes("spicchio")) {
+            const spicchi = Math.ceil(newValue);
+            formattedValue = `${spicchi} ${
+              spicchi === 1 ? "spicchio" : "spicchi"
+            }`;
+          } else if (element.textContent.includes("g")) {
+            formattedValue = `${Math.round(newValue)}g`;
+          } else {
+            formattedValue = `${Math.round(newValue)}`;
+          }
+
+          // Add animation
+          element.classList.add("updating");
+          setTimeout(() => {
+            element.textContent = formattedValue;
+            element.classList.remove("updating");
+          }, 150);
+        });
+
+        // Update portions info
+        portionsInfo.textContent = `👥 Per: ${currentPortions} ${
+          currentPortions === 1 ? "persona" : "persone"
+        }`;
+
+        // Update calories info
+        const totalCalories = caloriesPerPortion * currentPortions;
+        calorieInfo.textContent = `🔥 Totale: ${totalCalories} kcal`;
+      }
+
+      // Event listeners
+      decreaseBtn.addEventListener("click", () => {
+        const currentValue = parseInt(porzioniInput.value) || basePortions;
+        if (currentValue > 1) {
+          porzioniInput.value = currentValue - 1;
+          updateIngredients();
+        }
+      });
+
+      increaseBtn.addEventListener("click", () => {
+        const currentValue = parseInt(porzioniInput.value) || basePortions;
+        if (currentValue < 12) {
+          porzioniInput.value = currentValue + 1;
+          updateIngredients();
+        }
+      });
+
+      porzioniInput.addEventListener("input", () => {
+        let value = parseInt(porzioniInput.value) || basePortions;
+        if (value < 1) value = 1;
+        if (value > 12) value = 12;
+        porzioniInput.value = value;
+        updateIngredients();
+      });
+
+      porzioniInput.addEventListener("change", () => {
+        updateIngredients();
+      });
+    </script>
+  </body>
+</html>
