@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Torta Margherita Senza Uova - Ricetta completa"
+    />
+    <title>Torta Margherita Senza Uova | Il Mio Ricettario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/recipe-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>🍳 Ricettario</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#ricette" class="nav-link">Ricette</a></li>
+          <li><a href="index.html#categorie" class="nav-link">Categorie</a></li>
+          <li><a href="index.html#about" class="nav-link">Chi Sono</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+      <div class="recipe-hero-overlay"></div>
+      <div class="recipe-hero-content">
+        <span class="recipe-badge">Dolci</span>
+        <h1 class="recipe-hero-title">Torta Margherita Senza Uova</h1>
+        <p class="recipe-hero-subtitle">
+          Soffice, genuina e perfetta per ogni occasione
+        </p>
+        <div class="recipe-hero-meta">
+          <span>⏱️ Totale: 50 min</span>
+          <span>👨‍🍳 Difficoltà: Facile</span>
+          <span>🍰 Porzioni: 6 persone</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <div class="recipe-container">
+      <div class="recipe-main">
+        <!-- Image -->
+        <div class="recipe-image-main">
+          <img
+            src="images/torta-margherita.jpg"
+            alt="Torta Margherita Senza Uova"
+          />
+        </div>
+
+        <!-- Description -->
+        <div class="recipe-description-box">
+          <p>
+            La torta margherita senza uova è una variante di uno dei dolci più
+            semplici e buoni, apprezzati da grandi e piccini.
+          </p>
+          <p>
+            Un dolce adatto per ottime colazioni e merende, ma perfetto anche
+            come base da guarnire per ottenere una torta di compleanno,
+            utilizzandolo come il pan di Spagna, tagliandolo e aggiungendo una
+            farcitura a base di crema, cioccolato o frutta fresca.
+          </p>
+          <p>
+            Un classico della pasticceria casalinga che, per gli amanti della
+            linea e per chi ha intolleranze alimentari, possiamo realizzare
+            anche senza uova, ottenendo comunque un ottimo risultato, soffice e
+            genuino.
+          </p>
+        </div>
+
+        <!-- Timing Info -->
+        <div class="timing-card">
+          <h3>⏰ Tempistiche</h3>
+          <div class="timing-grid">
+            <div class="timing-item">
+              <span class="timing-label">Preparazione</span>
+              <span class="timing-value">15 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Cottura</span>
+              <span class="timing-value">35-40 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Tempo Totale</span>
+              <span class="timing-value">50 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredients-section">
+          <h2>📝 Ingredienti</h2>
+
+          <!-- Ingredient Calculator -->
+          <div class="ingredient-calculator">
+            <div class="calculator-header">
+              <span class="calculator-icon">🧮</span>
+              <h3>Calcolatore Ingredienti</h3>
+            </div>
+            <div class="calculator-controls">
+              <label for="diametroCount">Diametro tortiera (cm):</label>
+              <div class="counter-controls">
+                <button id="decreaseBtn" class="counter-btn">-</button>
+                <input
+                  type="number"
+                  id="diametroCount"
+                  value="20"
+                  min="12"
+                  max="32"
+                />
+                <button id="increaseBtn" class="counter-btn">+</button>
+              </div>
+              <div class="calculator-info">
+                <span id="tortieraInfo">📏 Tortiera standard: 20 cm</span>
+                <span id="portionsInfo">👥 Porzioni: 6 persone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span class="ingredient-name">Latte fresco</span>
+              <span class="ingredient-amount" data-base="375">375ml</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Zucchero semolato</span>
+              <span class="ingredient-amount" data-base="230">230g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Farina 00</span>
+              <span class="ingredient-amount" data-base="360">360g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Lievito per dolci</span>
+              <span class="ingredient-amount" data-base="16">16g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Burro</span>
+              <span class="ingredient-amount" data-base="70">70g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Estratto di vaniglia</span>
+              <span class="ingredient-amount" data-base="1">1 cucchiaino</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Scorza d'arancia grattugiata</span>
+              <span class="ingredient-amount" data-base="0.5">1/2 arancia</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name"
+                >Zucchero a velo (per decorare)</span
+              >
+              <span class="ingredient-amount">q.b.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions-section">
+          <h2>👨‍🍳 Procedimento</h2>
+
+          <!-- Step 1 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <h3>Preparazione Base</h3>
+              <span class="step-time">3 min</span>
+            </div>
+            <p>
+              Uniamo in una boule il burro fuso lasciato intiepidire e lo
+              zucchero semolato. Iniziamo a mescolare con una frusta a mano.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Il burro deve essere tiepido, non
+              caldo, per evitare che alteri la consistenza dell'impasto.
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <h3>Aggiunta Latte e Farina</h3>
+              <span class="step-time">5 min</span>
+            </div>
+            <p>
+              Poco per volta versiamo il latte. Setacciamo e aggiungiamo la
+              farina 00 in più riprese: alterniamo latte e farina e mescoliamo,
+              così da amalgamare bene gli ingredienti.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Alternare latte e farina aiuta a
+              ottenere un impasto più omogeneo e senza grumi!
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <h3>Lievito e Aromi</h3>
+              <span class="step-time">2 min</span>
+            </div>
+            <p>
+              Aggiungiamo il lievito per dolci e poi aromatizziamo l'impasto con
+              un cucchiaino di aroma di vaniglia e la scorza grattugiata di 1/2
+              arancia non trattata.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">4</span>
+              <h3>Amalgamare</h3>
+              <span class="step-time">3 min</span>
+            </div>
+            <p>
+              Mescoliamo bene finché il composto risulta omogeneo e senza grumi.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">5</span>
+              <h3>Preparazione Teglia</h3>
+              <span class="step-time">2 min</span>
+            </div>
+            <p>
+              Imburriamo e infariniamo una teglia da 20-22 cm di diametro e
+              trasferiamovi l'impasto.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Imburrare e infarinare bene la
+              teglia garantisce che il dolce si stacchi facilmente dopo la
+              cottura.
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">6</span>
+              <h3>Cottura</h3>
+              <span class="step-time">35-40 min</span>
+            </div>
+            <p>
+              Cuociamo per 35-40 minuti a 180°C in forno ventilato
+              preriscaldato. Se utilizziamo un forno statico prolunghiamo la
+              cottura di 5-10 minuti (totale 40-50 minuti).
+            </p>
+            <div class="step-warning">
+              ⚠️ <strong>Importante:</strong> Verificare la cottura con uno
+              stecchino: deve uscire asciutto!
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">7</span>
+              <h3>Raffreddamento</h3>
+              <span class="step-time">15 min</span>
+            </div>
+            <p>
+              Lasciamo raffreddare, trasferiamo il dolce su un piatto da portata
+              e spolveriamo a piacere con zucchero a velo.
+            </p>
+          </div>
+
+          <!-- Final Step -->
+          <div class="instruction-step final-step">
+            <div class="step-header">
+              <span class="step-number">✓</span>
+              <h3>Pronta da Gustare!</h3>
+            </div>
+            <p>
+              La nostra torta margherita senza uova è pronta! Soffice, profumata
+              e perfetta per ogni occasione. 🍰
+            </p>
+          </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips-section">
+          <h2>💡 Consigli e Varianti</h2>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">📦</div>
+              <h4>Conservazione</h4>
+              <p>
+                Questa torta si conserva ben chiusa a temperatura ambiente per
+                2-3 giorni.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🍋</div>
+              <h4>Variante Limone</h4>
+              <p>
+                Puoi sostituire la scorza d'arancia con quella di limone per un
+                sapore più fresco.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🌱</div>
+              <h4>Versione Vegana</h4>
+              <p>
+                Sostituisci il latte con acqua e usa 70g di olio di semi al
+                posto del burro.
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🎂</div>
+              <h4>Base per Torte</h4>
+              <p>
+                Perfetta come base per torte farcite! Tagliala a strati e
+                farcisci con creme o frutta fresca.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage Section -->
+        <div class="usage-section">
+          <h2>🎉 Per Quale Occasione</h2>
+          <div class="usage-content">
+            <p>Ogni occasione è buona per preparare questo dolce senza uova:</p>
+            <ul>
+              <li>
+                🌅 <strong>Colazione</strong>: Perfetta per iniziare la giornata
+                con dolcezza
+              </li>
+              <li>
+                ☕ <strong>Merenda</strong>: Semplice e genuina per il
+                pomeriggio
+              </li>
+              <li>
+                🎂 <strong>Torta di Compleanno</strong>: Tagliala a strati e
+                farcisci a piacere con:
+                <ul>
+                  <li>Panna montata</li>
+                  <li>Crema pasticcera</li>
+                  <li>Crema chantilly</li>
+                  <li>Crema al cioccolato</li>
+                  <li>Frutta fresca</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Wine Pairing -->
+        <div class="pairing-section">
+          <h2>🍷 Abbinamenti Consigliati</h2>
+          <div class="pairing-grid">
+            <div class="pairing-card">
+              <span class="pairing-icon">🥂</span>
+              <h4>Spumante o Prosecco</h4>
+            </div>
+            <div class="pairing-card">
+              <span class="pairing-icon">🍷</span>
+              <h4>Marsala Dolce</h4>
+            </div>
+            <div class="pairing-card">
+              <span class="pairing-icon">🍇</span>
+              <h4>Vin Santo</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="recipe-sidebar">
+        <!-- Quick Info -->
+        <div class="sidebar-card">
+          <h3>📊 Info Rapide</h3>
+          <div class="quick-info">
+            <div class="info-item">
+              <span class="info-label">Tempo Totale</span>
+              <span class="info-value">50 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Preparazione</span>
+              <span class="info-value">15 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Cottura</span>
+              <span class="info-value">35-40 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Difficoltà</span>
+              <span class="info-value">Facile</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Costo</span>
+              <span class="info-value">Basso</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temperature Info -->
+        <div class="sidebar-card">
+          <h3>🌡️ Temperature</h3>
+          <div class="temp-info">
+            <div class="temp-item">
+              <span>Forno Ventilato</span>
+              <strong>180°C</strong>
+            </div>
+            <div class="temp-item">
+              <span>Forno Statico</span>
+              <strong>180°C</strong>
+            </div>
+            <div class="temp-item">
+              <span>Burro</span>
+              <strong>Tiepido</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="sidebar-card">
+          <h3>🔧 Attrezzatura</h3>
+          <ul class="equipment-list">
+            <li>Boule capiente</li>
+            <li>Frusta a mano</li>
+            <li>Setaccio</li>
+            <li>Tortiera 20-22 cm</li>
+            <li>Grattugia</li>
+            <li>Stecchino (per prova cottura)</li>
+          </ul>
+        </div>
+
+        <!-- Allergens -->
+        <div class="sidebar-card allergens-card">
+          <h3>⚠️ Allergeni</h3>
+          <div class="allergens-list">
+            <span class="allergen">Glutine</span>
+            <span class="allergen">Lattosio</span>
+          </div>
+          <p class="allergen-note">✅ Senza uova</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Back to recipes -->
+    <div class="back-to-recipes">
+      <a href="index.html#ricette" class="btn btn-primary"
+        >← Torna alle Ricette</a
+      >
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍳 Il Mio Ricettario</h3>
+            <p>La tua collezione personale di ricette deliziose</p>
+          </div>
+          <div class="footer-section">
+            <h4>Link Rapidi</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ricette">Ricette</a></li>
+              <li><a href="index.html#categorie">Categorie</a></li>
+              <li><a href="index.html#about">Chi Sono</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Il Mio Ricettario. Creato con ❤️ e passione per la
+            cucina.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // ==================== INGREDIENT CALCULATOR ====================
+      const diametroInput = document.getElementById("diametroCount");
+      const decreaseBtn = document.getElementById("decreaseBtn");
+      const increaseBtn = document.getElementById("increaseBtn");
+      const portionsInfo = document.getElementById("portionsInfo");
+      const tortieraInfo = document.getElementById("tortieraInfo");
+      const ingredientAmounts = document.querySelectorAll(
+        ".ingredient-amount[data-base]"
+      );
+
+      // Base values for 20cm diameter pan
+      const baseDiameter = 20;
+      const basePortions = 6; // 6 portions for 20cm
+
+      function calculatePortions(diameter) {
+        // Estimate portions based on diameter (roughly 0.3 portions per cm)
+        return Math.round(diameter * 0.3);
+      }
+
+      function updateIngredients() {
+        const currentDiameter = parseInt(diametroInput.value) || baseDiameter;
+        
+        // Calculate multiplier based on area (π * r²)
+        // Area ratio = (new_diameter / base_diameter)²
+        const multiplier = Math.pow(currentDiameter / baseDiameter, 2);
+
+        // Update each ingredient
+        ingredientAmounts.forEach((element) => {
+          const baseValue = parseFloat(element.getAttribute("data-base"));
+          const newValue = baseValue * multiplier;
+
+          // Format the value based on ingredient type
+          let formattedValue;
+          if (element.textContent.includes("ml")) {
+            formattedValue = `${Math.round(newValue)}ml`;
+          } else if (element.textContent.includes("cucchiaino")) {
+            const spoons = Math.round(newValue);
+            formattedValue = `${spoons} ${
+              spoons === 1 ? "cucchiaino" : "cucchiaini"
+            }`;
+          } else if (element.textContent.includes("arancia")) {
+            const oranges = newValue;
+            if (oranges < 1) {
+              formattedValue = `1/2 arancia`;
+            } else if (oranges === 1) {
+              formattedValue = `1 arancia`;
+            } else {
+              formattedValue = `${Math.round(oranges * 2) / 2} arance`;
+            }
+          } else if (element.textContent.includes("g")) {
+            formattedValue =
+              newValue < 20
+                ? `${Math.round(newValue * 10) / 10}g`
+                : `${Math.round(newValue)}g`;
+          } else {
+            formattedValue = `${Math.round(newValue)}`;
+          }
+
+          // Add animation
+          element.classList.add("updating");
+          setTimeout(() => {
+            element.textContent = formattedValue;
+            element.classList.remove("updating");
+          }, 150);
+        });
+
+        // Update portions info
+        const estimatedPortions = calculatePortions(currentDiameter);
+        portionsInfo.textContent = `👥 Porzioni: ${estimatedPortions} persone`;
+        
+        // Update tortiera info
+        if (currentDiameter === baseDiameter) {
+          tortieraInfo.textContent = `📏 Tortiera standard: ${currentDiameter} cm`;
+        } else if (currentDiameter < baseDiameter) {
+          tortieraInfo.textContent = `📏 Tortiera piccola: ${currentDiameter} cm`;
+        } else {
+          tortieraInfo.textContent = `📏 Tortiera grande: ${currentDiameter} cm`;
+        }
+      }
+
+      // Event listeners
+      decreaseBtn.addEventListener("click", () => {
+        const currentValue = parseInt(diametroInput.value) || baseDiameter;
+        if (currentValue > 12) {
+          diametroInput.value = currentValue - 2;
+          updateIngredients();
+        }
+      });
+
+      increaseBtn.addEventListener("click", () => {
+        const currentValue = parseInt(diametroInput.value) || baseDiameter;
+        if (currentValue < 32) {
+          diametroInput.value = currentValue + 2;
+          updateIngredients();
+        }
+      });
+
+      diametroInput.addEventListener("input", () => {
+        let value = parseInt(diametroInput.value) || baseDiameter;
+        if (value < 12) value = 12;
+        if (value > 32) value = 32;
+        diametroInput.value = value;
+        updateIngredients();
+      });
+
+      diametroInput.addEventListener("change", () => {
+        updateIngredients();
+      });
+    </script>
+  </body>
+</html>

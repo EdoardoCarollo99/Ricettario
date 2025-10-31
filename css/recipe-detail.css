@@ -241,7 +241,9 @@
   transform: scale(0.95);
 }
 
-#teglieCount {
+#teglieCount,
+#porzioniCount,
+#diametroCount {
   width: 100px;
   height: 50px;
   font-size: 1.5rem;
@@ -254,7 +256,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-#teglieCount:focus {
+#teglieCount:focus,
+#porzioniCount:focus,
+#diametroCount:focus {
   outline: none;
   border-color: var(--white);
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
@@ -675,5 +679,180 @@
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+  }
+}
+
+/* ==================== ADDITIONAL SECTIONS ==================== */
+
+/* Recipe Description Box */
+.recipe-description-box {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 3rem;
+  border-left: 5px solid var(--primary-color);
+}
+
+.recipe-description-box p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.recipe-description-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Usage Section */
+.usage-section {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 3rem;
+}
+
+.usage-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+}
+
+.usage-content p {
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.usage-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.usage-content ul li {
+  padding: 0.75rem 0;
+  color: var(--text-light);
+  line-height: 1.8;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.usage-content ul li:last-child {
+  border-bottom: none;
+}
+
+.usage-content ul ul {
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+}
+
+.usage-content ul ul li {
+  padding: 0.5rem 0;
+  border: none;
+  font-size: 0.95rem;
+}
+
+/* Pairing Section */
+.pairing-section {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 3rem;
+}
+
+.pairing-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
+}
+
+.pairing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pairing-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.1),
+    rgba(78, 205, 196, 0.1)
+  );
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.pairing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary-color);
+}
+
+.pairing-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.pairing-card h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+}
+
+/* Allergens Card */
+.allergens-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.05),
+    rgba(255, 165, 0, 0.05)
+  );
+  border: 2px solid var(--primary-color);
+}
+
+.allergens-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.allergen {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.allergen-note {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid rgba(40, 167, 69, 0.3);
+}
+
+/* Responsive for new sections */
+@media (max-width: 768px) {
+  .recipe-description-box,
+  .usage-section,
+  .pairing-section {
+    padding: 1.5rem;
+  }
+
+  .pairing-grid {
+    grid-template-columns: 1fr;
   }
 }
