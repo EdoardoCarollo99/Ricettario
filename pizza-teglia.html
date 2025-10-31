@@ -93,7 +93,7 @@
         <!-- Ingredients -->
         <div class="ingredients-section">
           <h2>📝 Ingredienti</h2>
-          
+
           <!-- Ingredient Calculator -->
           <div class="ingredient-calculator">
             <div class="calculator-header">
@@ -104,7 +104,13 @@
               <label for="teglieCount">Numero di teglie (30x40cm):</label>
               <div class="counter-controls">
                 <button id="decreaseBtn" class="counter-btn">-</button>
-                <input type="number" id="teglieCount" value="1" min="1" max="10" />
+                <input
+                  type="number"
+                  id="teglieCount"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
                 <button id="increaseBtn" class="counter-btn">+</button>
               </div>
               <div class="calculator-info">
@@ -153,7 +159,9 @@
 
             <div class="ingredient-item">
               <span class="ingredient-name">Malto o Zucchero (opzionale)</span>
-              <span class="ingredient-amount" data-base="5">5g (1 cucchiaino)</span>
+              <span class="ingredient-amount" data-base="5"
+                >5g (1 cucchiaino)</span
+              >
             </div>
             <div class="ingredient-note">
               💡 Aiuta a dare colore e fornisce "cibo" extra per il lievito,
@@ -547,44 +555,49 @@
     <script src="js/script.js"></script>
     <script>
       // ==================== INGREDIENT CALCULATOR ====================
-      const teglieInput = document.getElementById('teglieCount');
-      const decreaseBtn = document.getElementById('decreaseBtn');
-      const increaseBtn = document.getElementById('increaseBtn');
-      const portionsInfo = document.getElementById('portionsInfo');
-      const ingredientAmounts = document.querySelectorAll('.ingredient-amount[data-base]');
+      const teglieInput = document.getElementById("teglieCount");
+      const decreaseBtn = document.getElementById("decreaseBtn");
+      const increaseBtn = document.getElementById("increaseBtn");
+      const portionsInfo = document.getElementById("portionsInfo");
+      const ingredientAmounts = document.querySelectorAll(
+        ".ingredient-amount[data-base]"
+      );
 
       // Base values for 1 teglia
       const basePortions = { min: 6, max: 8 };
 
       function updateIngredients() {
         const multiplier = parseInt(teglieInput.value) || 1;
-        
+
         // Update each ingredient
-        ingredientAmounts.forEach(element => {
-          const baseValue = parseFloat(element.getAttribute('data-base'));
+        ingredientAmounts.forEach((element) => {
+          const baseValue = parseFloat(element.getAttribute("data-base"));
           const newValue = baseValue * multiplier;
-          
+
           // Format the value based on ingredient type
           let formattedValue;
-          if (element.textContent.includes('ml')) {
+          if (element.textContent.includes("ml")) {
             formattedValue = `${Math.round(newValue)}ml`;
-          } else if (element.textContent.includes('cucchiaino')) {
+          } else if (element.textContent.includes("cucchiaino")) {
             const spoons = Math.round(newValue / 5);
-            formattedValue = `${Math.round(newValue)}g (${spoons} ${spoons === 1 ? 'cucchiaino' : 'cucchiaini'})`;
-          } else if (element.textContent.includes('g')) {
+            formattedValue = `${Math.round(newValue)}g (${spoons} ${
+              spoons === 1 ? "cucchiaino" : "cucchiaini"
+            })`;
+          } else if (element.textContent.includes("g")) {
             // Round to 1 decimal for small amounts, whole number for large
-            formattedValue = newValue < 20 
-              ? `${Math.round(newValue * 10) / 10}g` 
-              : `${Math.round(newValue)}g`;
+            formattedValue =
+              newValue < 20
+                ? `${Math.round(newValue * 10) / 10}g`
+                : `${Math.round(newValue)}g`;
           } else {
             formattedValue = `${Math.round(newValue)}`;
           }
-          
+
           // Add animation
-          element.classList.add('updating');
+          element.classList.add("updating");
           setTimeout(() => {
             element.textContent = formattedValue;
-            element.classList.remove('updating');
+            element.classList.remove("updating");
           }, 150);
         });
 
@@ -595,7 +608,7 @@
       }
 
       // Event listeners
-      decreaseBtn.addEventListener('click', () => {
+      decreaseBtn.addEventListener("click", () => {
         const currentValue = parseInt(teglieInput.value) || 1;
         if (currentValue > 1) {
           teglieInput.value = currentValue - 1;
@@ -603,7 +616,7 @@
         }
       });
 
-      increaseBtn.addEventListener('click', () => {
+      increaseBtn.addEventListener("click", () => {
         const currentValue = parseInt(teglieInput.value) || 1;
         if (currentValue < 10) {
           teglieInput.value = currentValue + 1;
@@ -611,7 +624,7 @@
         }
       });
 
-      teglieInput.addEventListener('input', () => {
+      teglieInput.addEventListener("input", () => {
         let value = parseInt(teglieInput.value) || 1;
         if (value < 1) value = 1;
         if (value > 10) value = 10;
@@ -619,7 +632,7 @@
         updateIngredients();
       });
 
-      teglieInput.addEventListener('change', () => {
+      teglieInput.addEventListener("change", () => {
         updateIngredients();
       });
     </script>

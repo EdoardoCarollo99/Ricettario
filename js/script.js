@@ -41,7 +41,7 @@ navLinks.forEach((link) => {
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     const targetId = link.getAttribute("href");
-    
+
     // Only prevent default if it's an anchor link (starts with #)
     if (targetId && targetId.startsWith("#")) {
       e.preventDefault();
@@ -282,7 +282,7 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const img = entry.target;
-      
+
       // Check if image is already loaded
       if (img.complete) {
         img.style.opacity = "1";
@@ -294,7 +294,7 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
         img.onload = () => {
           img.style.opacity = "1";
         };
-        
+
         observer.unobserve(img);
       }
     }

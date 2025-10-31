@@ -155,125 +155,125 @@
 
 /* Ingredients Section */
 .ingredients-section {
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    margin-bottom: 3rem;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 3rem;
 }
 
 .ingredients-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--dark-color);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
 }
 
 /* Ingredient Calculator */
 .ingredient-calculator {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
 }
 
 .calculator-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
 }
 
 .calculator-icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .calculator-header h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--white);
-    margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: 0;
 }
 
 .calculator-controls {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .calculator-controls label {
-    color: var(--white);
-    font-weight: 600;
-    font-size: 1.1rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .counter-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .counter-btn {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: var(--white);
-    font-size: 1.8rem;
-    font-weight: 700;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .counter-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
 .counter-btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 #teglieCount {
-    width: 100px;
-    height: 50px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    color: var(--dark-color);
-    font-family: 'Poppins', sans-serif;
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  color: var(--dark-color);
+  font-family: "Poppins", sans-serif;
 }
 
 #teglieCount:focus {
-    outline: none;
-    border-color: var(--white);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  outline: none;
+  border-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
 .calculator-info {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 .calculator-info span {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 0.95rem;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .ingredients-list {
@@ -303,15 +303,16 @@
 }
 
 .ingredient-amount {
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    transition: var(--transition);
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  transition: var(--transition);
 }
 
 .ingredient-amount.updating {
-    animation: pulse 0.3s ease-in-out;
-}.ingredient-note {
+  animation: pulse 0.3s ease-in-out;
+}
+.ingredient-note {
   padding: 1rem;
   background: #fff3cd;
   border-left: 4px solid #ffc107;
@@ -595,50 +596,51 @@
 }
 
 @media (max-width: 768px) {
-    .recipe-hero {
-        height: 50vh;
-        min-height: 350px;
-    }
+  .recipe-hero {
+    height: 50vh;
+    min-height: 350px;
+  }
 
-    .recipe-hero-title {
-        font-size: 2.5rem;
-    }
+  .recipe-hero-title {
+    font-size: 2.5rem;
+  }
 
-    .recipe-hero-subtitle {
-        font-size: 1.1rem;
-    }
+  .recipe-hero-subtitle {
+    font-size: 1.1rem;
+  }
 
-    .recipe-hero-meta {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+  .recipe-hero-meta {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 
-    .recipe-image-main {
-        height: 300px;
-    }
+  .recipe-image-main {
+    height: 300px;
+  }
 
-    .timing-grid {
-        grid-template-columns: 1fr;
-    }
+  .timing-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .ingredients-section,
-    .instructions-section,
-    .tips-section {
-        padding: 1.5rem;
-    }
+  .ingredients-section,
+  .instructions-section,
+  .tips-section {
+    padding: 1.5rem;
+  }
 
-    .ingredient-calculator {
-        padding: 1.5rem;
-    }
+  .ingredient-calculator {
+    padding: 1.5rem;
+  }
 
-    .calculator-info {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .calculator-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .counter-controls {
-        justify-content: center;
-    }  .step-header {
+  .counter-controls {
+    justify-content: center;
+  }
+  .step-header {
     flex-direction: column;
     align-items: flex-start;
   }
