@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Il mio ricettario personale - Scopri ricette deliziose e facili da preparare"
+    />
+    <title>Il Mio Ricettario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>🍳 Ricettario</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#ricette" class="nav-link">Ricette</a></li>
+          <li><a href="#categorie" class="nav-link">Categorie</a></li>
+          <li><a href="#about" class="nav-link">Chi Sono</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2 class="hero-title">Benvenuto nel Mio Ricettario</h2>
+        <p class="hero-subtitle">Dove la passione per la cucina diventa arte</p>
+        <div class="hero-buttons">
+          <a href="#ricette" class="btn btn-primary">Scopri le Ricette</a>
+          <a href="#categorie" class="btn btn-secondary">Esplora Categorie</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Cerca una ricetta..."
+          />
+          <button id="searchBtn">🔍</button>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">Tutte</button>
+          <button class="filter-btn" data-category="primi">Primi</button>
+          <button class="filter-btn" data-category="secondi">Secondi</button>
+          <button class="filter-btn" data-category="dolci">Dolci</button>
+          <button class="filter-btn" data-category="antipasti">
+            Antipasti
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ricette Grid -->
+    <section id="ricette" class="recipes-section">
+      <div class="container">
+        <h2 class="section-title">Le Mie Ricette</h2>
+        <div class="recipes-grid">
+          <!-- Recipe Card 1 - Pizza in Teglia -->
+          <article class="recipe-card" data-category="primi">
+            <div class="recipe-image">
+              <img src="images/pizza-teglia.jpg" alt="Pizza in Teglia" />
+              <div class="recipe-overlay">
+                <span class="recipe-time">⏱️ 6h 30min</span>
+                <span class="recipe-difficulty">👨‍🍳 Media</span>
+              </div>
+            </div>
+            <div class="recipe-content">
+              <h3 class="recipe-title">Pizza in Teglia Alta Idratazione</h3>
+              <p class="recipe-description">
+                Pizza soffice e croccante con lievitazione lenta, perfetta per
+                casa
+              </p>
+              <div class="recipe-meta">
+                <span class="recipe-info">⏰ Lievitazione: 6 ore totali</span>
+                <span class="recipe-info">🌡️ Cottura: 240-250°C</span>
+              </div>
+              <div class="recipe-footer">
+                <span class="recipe-category">Primi</span>
+                <a href="pizza-teglia.html" class="recipe-btn">Vedi Ricetta</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorie" class="categories-section">
+      <div class="container">
+        <h2 class="section-title">Esplora per Categoria</h2>
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-icon">🍝</div>
+            <h3>Primi Piatti</h3>
+            <p>Pasta, risotti e zuppe</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🥩</div>
+            <h3>Secondi Piatti</h3>
+            <p>Carne, pesce e vegetariani</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🧁</div>
+            <h3>Dolci</h3>
+            <p>Torte, biscotti e dessert</p>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">🥗</div>
+            <h3>Antipasti</h3>
+            <p>Appetizer e stuzzichini</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">La Mia Passione</h2>
+            <p>
+              Benvenuto nel mio ricettario personale! Qui condivido le mie
+              ricette preferite, quelle della tradizione e le mie creazioni
+              personali.
+            </p>
+            <p>
+              Ogni piatto racconta una storia, ogni ingrediente ha la sua
+              importanza. Cucinate con amore e passione!
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="about-image-placeholder">👨‍🍳</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍳 Il Mio Ricettario</h3>
+            <p>La tua collezione personale di ricette deliziose</p>
+          </div>
+          <div class="footer-section">
+            <h4>Link Rapidi</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#ricette">Ricette</a></li>
+              <li><a href="#categorie">Categorie</a></li>
+              <li><a href="#about">Chi Sono</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Il Mio Ricettario. Creato con ❤️ e passione per la
+            cucina.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

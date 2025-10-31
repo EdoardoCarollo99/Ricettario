@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pizza in Teglia Alta Idratazione - Ricetta completa"
+    />
+    <title>Pizza in Teglia | Il Mio Ricettario</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/recipe-detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>🍳 Ricettario</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#ricette" class="nav-link">Ricette</a></li>
+          <li><a href="index.html#categorie" class="nav-link">Categorie</a></li>
+          <li><a href="index.html#about" class="nav-link">Chi Sono</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+      <div class="recipe-hero-overlay"></div>
+      <div class="recipe-hero-content">
+        <span class="recipe-badge">Primi Piatti</span>
+        <h1 class="recipe-hero-title">Pizza in Teglia Alta Idratazione</h1>
+        <p class="recipe-hero-subtitle">
+          Soffice, croccante e perfetta per la casa
+        </p>
+        <div class="recipe-hero-meta">
+          <span>⏱️ Totale: 6h 30min</span>
+          <span>👨‍🍳 Difficoltà: Media</span>
+          <span>🍕 Porzioni: 1 teglia (30x40cm)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <div class="recipe-container">
+      <div class="recipe-main">
+        <!-- Image -->
+        <div class="recipe-image-main">
+          <img src="images/pizza-teglia.jpg" alt="Pizza in Teglia" />
+        </div>
+
+        <!-- Timing Info -->
+        <div class="timing-card">
+          <h3>⏰ Tempistiche</h3>
+          <div class="timing-grid">
+            <div class="timing-item">
+              <span class="timing-label">Preparazione Impasto</span>
+              <span class="timing-value">20 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Prima Lievitazione</span>
+              <span class="timing-value">3 ore</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Stesura in Teglia</span>
+              <span class="timing-value">10 min</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Seconda Lievitazione</span>
+              <span class="timing-value">3 ore</span>
+            </div>
+            <div class="timing-item">
+              <span class="timing-label">Cottura</span>
+              <span class="timing-value">15-20 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredients -->
+        <div class="ingredients-section">
+          <h2>📝 Ingredienti</h2>
+          
+          <!-- Ingredient Calculator -->
+          <div class="ingredient-calculator">
+            <div class="calculator-header">
+              <span class="calculator-icon">🧮</span>
+              <h3>Calcolatore Teglie</h3>
+            </div>
+            <div class="calculator-controls">
+              <label for="teglieCount">Numero di teglie (30x40cm):</label>
+              <div class="counter-controls">
+                <button id="decreaseBtn" class="counter-btn">-</button>
+                <input type="number" id="teglieCount" value="1" min="1" max="10" />
+                <button id="increaseBtn" class="counter-btn">+</button>
+              </div>
+              <div class="calculator-info">
+                <span>📏 Teglia standard: 30x40cm</span>
+                <span id="portionsInfo">👥 Porzioni: 6-8 persone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span class="ingredient-name">Farina tipo "0" o "1"</span>
+              <span class="ingredient-amount" data-base="500">500g</span>
+            </div>
+            <div class="ingredient-note">
+              💡 Usa farina con forza W 260-300. Una buona farina per pane va
+              benissimo. Evita farine deboli per dolci.
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Acqua tiepida (25-27°C)</span>
+              <span class="ingredient-amount" data-base="400">400ml</span>
+            </div>
+            <div class="ingredient-note">
+              💡 Corrisponde all'80% di idratazione. L'acqua tiepida aiuta la
+              lievitazione.
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Lievito di birra fresco</span>
+              <span class="ingredient-amount" data-base="5.5">5.5g</span>
+            </div>
+            <div class="ingredient-note">
+              💡 Se usi lievito secco, usane circa 2 grammi.
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Sale</span>
+              <span class="ingredient-amount" data-base="10">10g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Olio extra vergine d'oliva</span>
+              <span class="ingredient-amount" data-base="20">20g</span>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-name">Malto o Zucchero (opzionale)</span>
+              <span class="ingredient-amount" data-base="5">5g (1 cucchiaino)</span>
+            </div>
+            <div class="ingredient-note">
+              💡 Aiuta a dare colore e fornisce "cibo" extra per il lievito,
+              utile con temperature basse.
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions-section">
+          <h2>👨‍🍳 Procedimento</h2>
+
+          <!-- Step 1 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <h3>Preparazione del Lievito</h3>
+              <span class="step-time">5 min</span>
+            </div>
+            <p>
+              In una ciotola capiente, sciogli il lievito di birra fresco
+              nell'acqua tiepida. Se usi lo zucchero/malto, aggiungilo ora.
+              Mescola bene fino a completo scioglimento.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <h3>Aggiunta della Farina</h3>
+              <span class="step-time">3 min</span>
+            </div>
+            <p>
+              Versa circa il 90% della farina nella ciotola con l'acqua e il
+              lievito. Inizia a mescolare con un cucchiaio o una forchetta in
+              modo grossolano. L'impasto sarà molto grezzo e appiccicoso - è
+              normale!
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <h3>Riposo Iniziale (Autolisi)</h3>
+              <span class="step-time">15-20 min</span>
+            </div>
+            <p>
+              Copri la ciotola e lascia riposare l'impasto per 15-20 minuti.
+              Questo passaggio, chiamato autolisi, aiuta la farina ad assorbire
+              l'acqua e rende l'impasto molto più facile da lavorare.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Questo riposo è fondamentale per
+              ottenere un impasto morbido e gestibile!
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">4</span>
+              <h3>Aggiunta di Sale e Olio</h3>
+              <span class="step-time">5 min</span>
+            </div>
+            <p>
+              Aggiungi il sale e la restante farina. Inizia a impastare a mano
+              nella ciotola. Quando il sale è assorbito, aggiungi l'olio a filo,
+              continuando a impastare fino a completa incorporazione.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">5</span>
+              <h3>Pieghe di Rinforzo</h3>
+              <span class="step-time">2-3 min</span>
+            </div>
+            <p>
+              Con le mani umide, prendi un lembo di impasto dal bordo, tiralo
+              verso l'alto e portalo al centro. Ruota la ciotola di 90 gradi e
+              ripeti l'operazione per 4-5 volte. L'impasto inizierà a diventare
+              più liscio ed elastico.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Non serve lavorare l'impasto sul
+              piano. Le pieghe in ciotola sono sufficienti per sviluppare il
+              glutine!
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">6</span>
+              <h3>Prima Lievitazione (Puntata)</h3>
+              <span class="step-time">3 ore</span>
+            </div>
+            <p>
+              Copri la ciotola con pellicola trasparente o un coperchio. Cerca
+              il punto più caldo della casa:
+            </p>
+            <ul>
+              <li>🔥 Nel forno con solo la luce accesa (soluzione ideale!)</li>
+              <li>🔥 Vicino a un calorifero</li>
+              <li>🔥 In un pensile chiuso</li>
+            </ul>
+            <p>
+              L'impasto dovrebbe aumentare di volume e mostrare delle bolle in
+              superficie.
+            </p>
+            <div class="step-warning">
+              ⚠️ <strong>Importante:</strong> Con temperatura bassa (17°C), è
+              fondamentale trovare un ambiente più caldo per aiutare la
+              lievitazione.
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">7</span>
+              <h3>Preparazione Teglia</h3>
+              <span class="step-time">2 min</span>
+            </div>
+            <p>
+              Ungi generosamente la teglia con olio d'oliva. Questo è il segreto
+              per un fondo croccante e saporito!
+            </p>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">8</span>
+              <h3>Stesura in Teglia</h3>
+              <span class="step-time">10 min</span>
+            </div>
+            <p>
+              Rovescia delicatamente l'impasto dalla ciotola al centro della
+              teglia. Con le dita unte d'olio, allarga l'impasto dal centro
+              verso i bordi, cercando di non schiacciare le bolle d'aria.
+            </p>
+            <p>
+              Non preoccuparti se non riesci a coprire subito tutta la teglia.
+              Copri e lascia riposare 15-20 minuti, poi procedi con una seconda
+              stesura: vedrai che ora sarà molto più facile!
+            </p>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">9</span>
+              <h3>Seconda Lievitazione (Appretto)</h3>
+              <span class="step-time">3 ore</span>
+            </div>
+            <p>
+              Copri la teglia con pellicola trasparente o un canovaccio pulito.
+              Metti la teglia a lievitare nello stesso punto caldo usato prima.
+            </p>
+            <p>
+              L'impasto si gonfierà visibilmente e riempirà la teglia, creando i
+              classici "cuscinetti" in superficie.
+            </p>
+          </div>
+
+          <!-- Step 10 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">10</span>
+              <h3>Preriscaldamento Forno</h3>
+              <span class="step-time">15 min prima</span>
+            </div>
+            <p>
+              Accendi il forno alla massima temperatura possibile in modalità
+              statica (240-250°C). Posiziona la griglia nella parte più bassa
+              del forno.
+            </p>
+            <div class="step-tip">
+              ⭐ <strong>Consiglio:</strong> Il forno deve essere ben caldo per
+              ottenere un fondo croccante!
+            </div>
+          </div>
+
+          <!-- Step 11 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">11</span>
+              <h3>Condimento</h3>
+              <span class="step-time">3 min</span>
+            </div>
+            <p>
+              Togli la pellicola dalla teglia. Crea i classici "buchi" con i
+              polpastrelli e condisci la superficie con:
+            </p>
+            <ul>
+              <li>Un'emulsione di olio, acqua e sale (salamoia), oppure</li>
+              <li>Direttamente con la passata di pomodoro</li>
+            </ul>
+          </div>
+
+          <!-- Step 12 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">12</span>
+              <h3>Prima Fase di Cottura</h3>
+              <span class="step-time">8-10 min</span>
+            </div>
+            <p>
+              Inforna la pizza nella parte bassa del forno per i primi 8-10
+              minuti. Questo shock termico iniziale è fondamentale per cuocere
+              bene la base e renderla croccante.
+            </p>
+          </div>
+
+          <!-- Step 13 -->
+          <div class="instruction-step">
+            <div class="step-header">
+              <span class="step-number">13</span>
+              <h3>Seconda Fase di Cottura</h3>
+              <span class="step-time">5-7 min</span>
+            </div>
+            <p>
+              Estrai la pizza, aggiungi la mozzarella (ben asciutta) e gli altri
+              ingredienti desiderati. Sposta la griglia a metà altezza e inforna
+              di nuovo per altri 5-7 minuti, o finché la mozzarella non sarà
+              sciolta e il cornicione ben dorato.
+            </p>
+          </div>
+
+          <!-- Final Step -->
+          <div class="instruction-step final-step">
+            <div class="step-header">
+              <span class="step-number">✓</span>
+              <h3>Pronta da Gustare!</h3>
+            </div>
+            <p>
+              Sforna la pizza, lasciala riposare 2-3 minuti, taglia e servi
+              fumante. Buon appetito! 🍕
+            </p>
+          </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips-section">
+          <h2>💡 Consigli Utili</h2>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <div class="tip-icon">🌡️</div>
+              <h4>Temperatura</h4>
+              <p>
+                Con temperature basse in casa, cerca sempre il punto più caldo.
+                Il forno con luce accesa è perfetto!
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">💧</div>
+              <h4>Idratazione</h4>
+              <p>
+                L'impasto è molto idratato (80%). Usa sempre mani e superfici
+                unte d'olio, mai farina!
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">⏰</div>
+              <h4>Tempistiche</h4>
+              <p>
+                Se fa freddo, le lievitazioni potrebbero richiedere 30-60 minuti
+                in più. Fidati della vista, non dell'orologio!
+              </p>
+            </div>
+            <div class="tip-card">
+              <div class="tip-icon">🧀</div>
+              <h4>Mozzarella</h4>
+              <p>
+                Asciuga bene la mozzarella con carta assorbente per evitare che
+                la pizza diventi acquosa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="recipe-sidebar">
+        <!-- Quick Info -->
+        <div class="sidebar-card">
+          <h3>📊 Info Rapide</h3>
+          <div class="quick-info">
+            <div class="info-item">
+              <span class="info-label">Tempo Totale</span>
+              <span class="info-value">6h 30min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Tempo Attivo</span>
+              <span class="info-value">40 min</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Riposo</span>
+              <span class="info-value">6 ore</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Difficoltà</span>
+              <span class="info-value">Media</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Porzioni</span>
+              <span class="info-value">6-8 persone</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temperature Info -->
+        <div class="sidebar-card">
+          <h3>🌡️ Temperature</h3>
+          <div class="temp-info">
+            <div class="temp-item">
+              <span>Acqua</span>
+              <strong>25-27°C</strong>
+            </div>
+            <div class="temp-item">
+              <span>Lievitazione</span>
+              <strong>20-25°C</strong>
+            </div>
+            <div class="temp-item">
+              <span>Forno</span>
+              <strong>240-250°C</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="sidebar-card">
+          <h3>🔧 Attrezzatura</h3>
+          <ul class="equipment-list">
+            <li>Ciotola capiente</li>
+            <li>Teglia 30x40cm</li>
+            <li>Pellicola trasparente</li>
+            <li>Bilancia da cucina</li>
+            <li>Termometro (opzionale)</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Back to recipes -->
+    <div class="back-to-recipes">
+      <a href="index.html#ricette" class="btn btn-primary"
+        >← Torna alle Ricette</a
+      >
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍳 Il Mio Ricettario</h3>
+            <p>La tua collezione personale di ricette deliziose</p>
+          </div>
+          <div class="footer-section">
+            <h4>Link Rapidi</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ricette">Ricette</a></li>
+              <li><a href="index.html#categorie">Categorie</a></li>
+              <li><a href="index.html#about">Chi Sono</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">📷</a>
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">🐦</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Il Mio Ricettario. Creato con ❤️ e passione per la
+            cucina.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // ==================== INGREDIENT CALCULATOR ====================
+      const teglieInput = document.getElementById('teglieCount');
+      const decreaseBtn = document.getElementById('decreaseBtn');
+      const increaseBtn = document.getElementById('increaseBtn');
+      const portionsInfo = document.getElementById('portionsInfo');
+      const ingredientAmounts = document.querySelectorAll('.ingredient-amount[data-base]');
+
+      // Base values for 1 teglia
+      const basePortions = { min: 6, max: 8 };
+
+      function updateIngredients() {
+        const multiplier = parseInt(teglieInput.value) || 1;
+        
+        // Update each ingredient
+        ingredientAmounts.forEach(element => {
+          const baseValue = parseFloat(element.getAttribute('data-base'));
+          const newValue = baseValue * multiplier;
+          
+          // Format the value based on ingredient type
+          let formattedValue;
+          if (element.textContent.includes('ml')) {
+            formattedValue = `${Math.round(newValue)}ml`;
+          } else if (element.textContent.includes('cucchiaino')) {
+            const spoons = Math.round(newValue / 5);
+            formattedValue = `${Math.round(newValue)}g (${spoons} ${spoons === 1 ? 'cucchiaino' : 'cucchiaini'})`;
+          } else if (element.textContent.includes('g')) {
+            // Round to 1 decimal for small amounts, whole number for large
+            formattedValue = newValue < 20 
+              ? `${Math.round(newValue * 10) / 10}g` 
+              : `${Math.round(newValue)}g`;
+          } else {
+            formattedValue = `${Math.round(newValue)}`;
+          }
+          
+          // Add animation
+          element.classList.add('updating');
+          setTimeout(() => {
+            element.textContent = formattedValue;
+            element.classList.remove('updating');
+          }, 150);
+        });
+
+        // Update portions info
+        const minPortions = basePortions.min * multiplier;
+        const maxPortions = basePortions.max * multiplier;
+        portionsInfo.textContent = `👥 Porzioni: ${minPortions}-${maxPortions} persone`;
+      }
+
+      // Event listeners
+      decreaseBtn.addEventListener('click', () => {
+        const currentValue = parseInt(teglieInput.value) || 1;
+        if (currentValue > 1) {
+          teglieInput.value = currentValue - 1;
+          updateIngredients();
+        }
+      });
+
+      increaseBtn.addEventListener('click', () => {
+        const currentValue = parseInt(teglieInput.value) || 1;
+        if (currentValue < 10) {
+          teglieInput.value = currentValue + 1;
+          updateIngredients();
+        }
+      });
+
+      teglieInput.addEventListener('input', () => {
+        let value = parseInt(teglieInput.value) || 1;
+        if (value < 1) value = 1;
+        if (value > 10) value = 10;
+        teglieInput.value = value;
+        updateIngredients();
+      });
+
+      teglieInput.addEventListener('change', () => {
+        updateIngredients();
+      });
+    </script>
+  </body>
+</html>
